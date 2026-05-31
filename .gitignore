@@ -1,0 +1,13 @@
+node_modules
+.vitepress/dist
+.vitepress/cache
+.DS_Store
+*.log
+.env
+.env.local
+
+# Local agent / editor state
+.agents/
+.claude/
+.idea/
+.vscode/

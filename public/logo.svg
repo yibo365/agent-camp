@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">AIGC Camp Logo</title>
+  <desc id="desc">A route-shaped letter A mark for AIGC Camp.</desc>
+  <rect width="64" height="64" rx="14" fill="#2f7d68"/>
+  <path d="M19 46 31.7 18h.6L45 46h-8.1l-1.8-4.6H28.9L27.1 46H19Zm12.9-20.2-4.5 11.4h9.1L32 25.8Z" fill="#f5fffb"/>
+  <path d="M18.5 45.5c7.6-8.7 16.2-13.8 27-16.1" fill="none" stroke="#aee4d2" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="22" cy="42" r="4.2" fill="#f5fffb"/>
+  <circle cx="46" cy="29" r="4.2" fill="#f5fffb"/>
+  <circle cx="22" cy="42" r="1.8" fill="#2f7d68"/>
+  <circle cx="46" cy="29" r="1.8" fill="#2f7d68"/>
+</svg>
