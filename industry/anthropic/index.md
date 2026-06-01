@@ -2,9 +2,9 @@
 
 来源：[Engineering at Anthropic](https://www.anthropic.com/engineering)。整理日期：2026-06-01。
 
-这一组收录 Anthropic Engineering 入口当前可见的工程文章。每篇都整理成站内中文精读页，保留原文链接、发布时间和主题脉络，重点提炼 Claude Code、Agent harness、上下文工程、工具使用、评测、安全和 MCP 的工程取舍。
+这一组收录 Anthropic Engineering 入口当前可见的工程文章。每篇都整理成站内中文深度精读页，保留原文链接、发布时间和主题脉络，重点提炼 Claude Code、Agent harness、上下文工程、工具使用、评测、安全和 MCP 的工程取舍。
 
-> 说明：本站页面是中文学习笔记，不是原文全文翻译。需要完整细节、图片和代码时，请回到原文阅读。
+> 说明：本站页面面向国内学习者做了较完整的中文讲解和结构化重述，但不是逐字全文翻译。需要核对原始表述、图片和代码时，请回到原文阅读。
 
 ## 文章列表
 
