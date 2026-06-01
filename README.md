@@ -36,6 +36,7 @@ npm run build
 ├── multi-agent/         # 10. 多 Agent 协作
 ├── engineering/         # 11. Agent 工程化
 ├── vertical/            # 12. 垂直领域 Agent
+├── industry/            # 13. 一线工程分享
 └── index.md             # 首页
 ```
 

@@ -1,27 +1,57 @@
-# Naive RAG 与瓶颈
+---
+title: Naive RAG 与瓶颈
+description: 拆解 Naive RAG 的索引、检索、生成流程，以及它在生产系统中的核心瓶颈。
+---
 
-> 把"先检索、再生成"这一句话拆开看到底——以及它为什么不够用。
+<section class="doc-hero">
+  <p class="doc-hero__kicker">RAG 基础</p>
+  <h1>Naive RAG 与瓶颈</h1>
+  <p class="doc-hero__lead">把"先检索、再生成"这一句话拆开看到底，以及它为什么不够用。</p>
+  <div class="doc-hero__meta" aria-label="本文信息">
+    <span>适合阶段：RAG 入门</span>
+    <span>核心链路：索引 / 检索 / 生成</span>
+    <span>面试重点：瓶颈与 debug</span>
+  </div>
+</section>
 
 ## 面试官想考什么
 
 读完这篇你要能正面回答下面这些题。每题后面括号里是面试官真正想看你答出什么。
 
-- **Naive RAG 的三段式流程是什么？每一段的设计意图分别是什么？**
-  （考基础认知，但区分点在"为什么这样切"，不是流程图复述）
-- **同一个问题，用户换种说法就召回不到正确文档。这是为什么？**
-  （考你对 semantic gap 的理解，能不能讲到向量空间和 query/doc 不对称）
-- **chunk size 选 256 还是 1024？背后的 trade-off 是什么？**
-  （考工程权衡，没有标准答案的题才是好题）
-- **top-K 检索的 K 怎么选？K=3 和 K=20 各有什么坑？**
-  （考真实经验，没踩过坑的人答不出"K 太大反而更差"）
-- **召回了正确文档，但 LLM 还是答错了。怎么 debug？**
-  （考端到端思维 + 对 Lost in the Middle 的认知）
-- **GPT-4 上下文已经 128K，为什么还要 RAG？直接全塞进去不行吗？**
-  （考辨析能力，2024 年后这题问的人特别多）
-- **BM25 是 90 年代的算法，为什么现在生产 RAG 还要用它？**
-  （考对检索本质的理解，纯向量党答不出）
-- **怎么知道你的 RAG 系统是"召回不行"还是"生成不行"？**
-  （考评估意识，分不开问题就没法迭代）
+<div class="interview-grid">
+  <div>
+    <strong>Naive RAG 的三段式流程是什么？</strong>
+    <span>考基础认知，但区分点在"为什么这样切"，不是流程图复述。</span>
+  </div>
+  <div>
+    <strong>同一个问题，换种说法就召回不到正确文档。这是为什么？</strong>
+    <span>考 semantic gap，能不能讲到向量空间和 query/doc 不对称。</span>
+  </div>
+  <div>
+    <strong>chunk size 选 256 还是 1024？</strong>
+    <span>考工程权衡，没有标准答案的题才是好题。</span>
+  </div>
+  <div>
+    <strong>top-K 检索的 K 怎么选？</strong>
+    <span>考真实经验，没踩过坑的人答不出"K 太大反而更差"。</span>
+  </div>
+  <div>
+    <strong>召回了正确文档，但 LLM 还是答错了。怎么 debug？</strong>
+    <span>考端到端思维，以及对 Lost in the Middle 的认知。</span>
+  </div>
+  <div>
+    <strong>GPT-4 上下文已经 128K，为什么还要 RAG？</strong>
+    <span>考辨析能力，2024 年后这题问的人特别多。</span>
+  </div>
+  <div>
+    <strong>BM25 是 90 年代的算法，为什么生产 RAG 还要用它？</strong>
+    <span>考对检索本质的理解，纯向量党答不出。</span>
+  </div>
+  <div>
+    <strong>怎么知道 RAG 系统是"召回不行"还是"生成不行"？</strong>
+    <span>考评估意识，分不开问题就没法迭代。</span>
+  </div>
+</div>
 
 ---
 
