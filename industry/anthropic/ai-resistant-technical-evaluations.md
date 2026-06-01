@@ -1,0 +1,38 @@
+# 设计抗 AI 的技术评测
+
+- 原文标题：Designing AI-resistant technical evaluations
+- 原文链接：https://www.anthropic.com/engineering/AI-resistant-technical-evaluations
+- 发布时间：2026-01-21
+- 来源：Anthropic Engineering
+- 主题：技术面试、AI-resistant eval、评测泄漏
+
+> 本文是中文精读笔记，不是原文全文翻译。
+
+## 这篇文章解决什么问题
+
+当候选人可以使用 AI，传统笔试、算法题和 take-home 项目会发生变化：评测不再只衡量候选人能力，也衡量他们使用 AI 的能力、题目泄漏程度和监督方式。文章讨论如何重新设计技术评测。
+
+## 核心内容
+
+- AI 让可复制、标准答案明确的题目更容易失效。
+- 更好的评测应关注问题澄清、设计取舍、调试过程和解释能力。
+- 如果允许 AI，评测应明确允许范围，并观察候选人如何验证 AI 输出。
+- 如果不允许 AI，需要设计更强的环境控制和题目新鲜度机制。
+
+## 工程启发
+
+- 企业内部能力评测也会受 AI 影响，不能继续依赖旧题库。
+- 对 Agent 工程师来说，能否审查和约束 AI 输出本身就是能力。
+- 抗 AI 评测不是反 AI，而是测出人类在 AI 协作中的真实贡献。
+
+## 和本站章节的关系
+
+- [Agent 工程化 - 评估体系](../../engineering/evaluation)
+- [Coding Agent](../../vertical/coding-agent)
+- [面试知识体系首页](../../)
+
+## 面试追问
+
+- AI 时代的技术面试应该测什么？
+- take-home 项目如何避免变成纯 AI 代写？
+- 如何评价候选人使用 AI 的能力？
