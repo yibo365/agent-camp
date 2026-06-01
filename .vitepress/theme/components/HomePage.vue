@@ -34,6 +34,7 @@ const pillars = [
     desc: '面试高频的评估、监控、成本和安全问题。',
     links: [
       { text: 'Agent 工程化', href: '/engineering/', note: 'Benchmark、Observability、成本、安全、限流' },
+      { text: '一线工程分享', href: '/industry/', note: 'OpenAI、Anthropic 工程博客中文导读' },
       { text: '评估体系', href: '/engineering/evaluation', note: 'SWE-bench、GAIA、AgentBench、MMAU' },
       { text: '安全与防护', href: '/engineering/security', note: 'Prompt Injection、Jailbreak、Guardrails' },
     ],
@@ -77,7 +78,7 @@ const questions = [
 ]
 
 const stats = [
-  { value: '12', label: '知识模块' },
+  { value: '13', label: '知识模块' },
   { value: '100+', label: '知识页面' },
   { value: '4', label: '学习阶段' },
 ]

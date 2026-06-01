@@ -7,6 +7,25 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
 
+  markdown: {
+    config(md) {
+      const defaultFence = md.renderer.rules.fence
+
+      md.renderer.rules.fence = (tokens, idx, options, env, self) => {
+        const token = tokens[idx]
+        const info = token.info.trim()
+
+        if (info === 'mermaid' || info.startsWith('mermaid ')) {
+          return `<MermaidBlock code="${encodeURIComponent(token.content)}"></MermaidBlock>`
+        }
+
+        return defaultFence
+          ? defaultFence(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+      }
+    },
+  },
+
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#3c8772' }],
@@ -71,6 +90,7 @@ export default defineConfig({
         text: '工程化',
         items: [
           { text: 'Agent 工程化', link: '/engineering/' },
+          { text: '一线工程分享', link: '/industry/' },
           { text: '垂直领域 Agent', link: '/vertical/' },
         ],
       },
@@ -257,6 +277,17 @@ export default defineConfig({
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },
+          ],
+        },
+      ],
+
+      '/industry/': [
+        {
+          text: '一线工程分享',
+          items: [
+            { text: '概览', link: '/industry/' },
+            { text: 'OpenAI Engineering 中文导读', link: '/industry/openai-engineering' },
+            { text: 'Anthropic Engineering 中文导读', link: '/industry/anthropic-engineering' },
           ],
         },
       ],
