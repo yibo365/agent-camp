@@ -4,9 +4,9 @@
   "description": "AI Agent 学习与面试指南 - AIGC Camp",
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "vitepress dev --port 4080",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview --port 4080"
   },
   "devDependencies": {
     "mermaid": "^11.15.0",
