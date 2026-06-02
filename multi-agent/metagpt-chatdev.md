@@ -415,12 +415,12 @@ CrewAI ([crewai.com](https://www.crewai.com/)) 是 2024 年崛起最快的多 Ag
 | Artifact（结构化产出） | Task（含 expected_output） |
 | Action（角色内部操作） | Tool |
 
-CrewAI 等于"把 MetaGPT 的 SOP 思想做成更通用的 Python SDK"。详见 [CrewAI 框架解析](../frameworks/crewai)。
+CrewAI 等于"把 MetaGPT 的 SOP 思想做成更通用的 Python SDK"。可结合 [框架选型对比](../frameworks/comparison) 看它在多 Agent 框架里的定位。
 
 ### 2. Communicative Agent 思想 → AutoGen / CAMEL / AgentVerse
 
 - **CAMEL** ([camel-ai.org](https://www.camel-ai.org/)) 直接以 *Communicative Agents for Mind Exploration of Large Scale Language Models* 命名（早于 ChatDev 几个月，但 ChatDev 把它工程化落地）——它的 AI Society 框架就是两两对话。
-- **AutoGen** 的 GroupChat 模式本质是 N 个 Agent 的对话池，加上 `select_speaker` 函数决定谁说话。如果只有 2 个 agent，就退化成 ChatDev 风格。详见 [AutoGen 框架解析](../frameworks/autogen)。
+- **AutoGen** 的 GroupChat 模式本质是 N 个 Agent 的对话池，加上 `select_speaker` 函数决定谁说话。如果只有 2 个 agent，就退化成 ChatDev 风格。可结合 [框架选型对比](../frameworks/comparison) 看它和其它框架的差异。
 - **AgentVerse** 把多 Agent 对话扩展到了"专家组讨论 + 投票"的范式。
 
 ### 3. 角色扮演成为默认套路
@@ -560,8 +560,8 @@ Cognition 主张的替代方案：**一个主 Agent 负责所有决策，用强�
 | **多 Agent 架构模式** | 综述：hierarchical / network / supervisor | [patterns](./patterns) |
 | **Orchestrator-Worker 模式** | 单层调度模型 | [orchestrator-worker](./orchestrator-worker) |
 | **编程 Agent 综述** | 横向看 Devin / Cursor / Aider / Claude Code | [coding-agent](../vertical/coding-agent) |
-| **CrewAI 框架** | 受 MetaGPT 启发的多 Agent SDK | [crewai](../frameworks/crewai) |
-| **AutoGen 框架** | 微软的 GroupChat 多 Agent 框架 | [autogen](../frameworks/autogen) |
+| **CrewAI 框架** | 受 MetaGPT 启发的多 Agent SDK | [frameworks comparison](../frameworks/comparison) |
+| **AutoGen 框架** | 微软的 GroupChat 多 Agent 框架 | [frameworks comparison](../frameworks/comparison) |
 | **MetaGPT / ChatDev 案例** | 两个软件公司模拟器的深度剖析 | 本文 |
 
 辨析要点：
@@ -651,5 +651,4 @@ Cognition 主张的替代方案：**一个主 Agent 负责所有决策，用强�
   - [多 Agent 架构模式](./patterns) — hierarchical / network / supervisor 模式
   - [Orchestrator-Worker 模式](./orchestrator-worker) — 单层调度的最简模型
   - [编程 Agent](../vertical/coding-agent) — Devin / Cursor / Aider / Claude Code 横向对比
-  - [CrewAI 框架](../frameworks/crewai) — MetaGPT SOP 思想的工程化继承
-  - [AutoGen 框架](../frameworks/autogen) — ChatDev Communicative Agent 思想的泛化
+  - [框架选型对比](../frameworks/comparison) — CrewAI / AutoGen 等多 Agent 框架的定位对比

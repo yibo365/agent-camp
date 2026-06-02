@@ -15,7 +15,7 @@ pageClass: frameworks-pi-page
   </div>
 </section>
 
-> **本文边界**：聚焦 Pi 的架构哲学和扩展机制。编程 Agent 的通用模式见 [编程 Agent](../vertical/coding)；Claude Code 的源码解析见 [Claude Code 源码](../source/claude-code)；终端工具的选型见 [框架选型决策树](./comparison)。
+> **本文边界**：聚焦 Pi 的架构哲学和扩展机制。编程 Agent 的通用模式见 [编程 Agent](../vertical/coding-agent)；Claude Code 的源码解析见 [Claude Code 源码](../source/claude-code)；终端工具的选型见 [框架选型决策树](./comparison)。
 
 ## 面试官想考什么
 

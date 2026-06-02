@@ -362,7 +362,7 @@ flowchart TD
     Q2 -->|否| Network[Network 模式<br/>慎用,只在研究/创意场景]
     Q2 -->|是| Q3{需要<br/>子任务再分解吗?<br/>层级 > 2?}
     Q3 -->|是| Hierarchical[Hierarchical 模式<br/>但层级不超 3]
-    Q3 -->|否| Q4{控制权是<br/>"始终回到调度者"<br/>还是"显式转移"?}
+    Q3 -->|否| Q4{控制权是<br/>始终回到调度者<br/>还是显式转移?}
     Q4 -->|始终回到调度者| Supervisor[Supervisor 模式<br/>最稳、最推荐]
     Q4 -->|显式转移| Swarm[Swarm 模式<br/>适合分诊/转接场景]
 ```

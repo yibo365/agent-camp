@@ -248,8 +248,8 @@ class State(TypedDict):
 
 ```mermaid
 flowchart LR
-    A["节点 A: 检索"] -->|返回 messages=[doc1]| Merge
-    B["节点 B: 搜索"] -->|返回 messages=[doc2]| Merge
+    A["节点 A: 检索"] -->|返回 messages: doc1| Merge
+    B["节点 B: 搜索"] -->|返回 messages: doc2| Merge
     Merge["合并 State"] --> C["节点 C: 生成"]
 ```
 

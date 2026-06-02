@@ -5,6 +5,7 @@ node_modules
 *.log
 .env
 .env.local
+.env.cloudflare
 
 # Local agent / editor state
 .agents/

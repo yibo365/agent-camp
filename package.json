@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev --port 4080",
     "build": "vitepress build",
-    "preview": "vitepress preview --port 4080"
+    "preview": "vitepress preview --port 4080",
+    "deploy:cf": "npm run build && npx wrangler pages deploy .vitepress/dist --project-name agent-camp --branch master"
   },
   "devDependencies": {
     "mermaid": "^11.15.0",
