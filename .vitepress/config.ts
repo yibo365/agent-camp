@@ -354,7 +354,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' },
+      { icon: 'github', link: 'https://github.com/yibo365/agent-camp' },
     ],
 
     footer: {
@@ -363,7 +363,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/your-org/aigc-camp/edit/main/:path',
+      pattern: 'https://github.com/yibo365/agent-camp/edit/master/:path',
       text: '在 GitHub 上编辑此页',
     },
   },
