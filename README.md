@@ -1,4 +1,4 @@
-# AIGC Camp
+# agent-camp
 
 > 面向 AI Agent 工程师面试的系统化知识库：从 LLM、Prompt、RAG、工具调用，到 Agent 架构、多 Agent 协作、主流框架源码和生产工程化。
 
