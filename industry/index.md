@@ -48,5 +48,5 @@ OpenAI 和 Anthropic 的工程博客，是观察 Agent 产品如何真实落地�
 ## 和本站章节的关系
 
 - [Agent 工程化](../engineering/) 讲评估、观测、成本、安全这些通用工程问题。
-- [Agent 源码解析](../source/) 讲 Claude Code、Codex CLI、Cursor、Cline 等系统的实现思路。
+- [Agent 源码解析](../source/) 讲 Claude Code、Codex CLI、Cline、OpenHands 等系统的实现思路。
 - [上下文工程](../context/) 和 [工具调用](../tools/) 是理解这些文章的底层知识。

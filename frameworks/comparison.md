@@ -119,7 +119,7 @@ pageClass: frameworks-comparison-page
 
 **反模式**：用 LangGraph 做这事会非常累——你需要自己实现 LlamaIndex 提供的开箱组件。
 
-### 场景 2：编程 Agent（类似 Claude Code / Cursor）
+### 场景 2：编程 Agent（类似 Claude Code / Cline）
 
 **需求**：让 Agent 读代码、改代码、跑测试、提交 PR。
 
@@ -304,7 +304,7 @@ support:
 
 ```
 2023：百花齐放期
-  → LangChain、LlamaIndex、AutoGen、CrewAI、Semantic Kernel、Agno……
+  → LangChain、LlamaIndex、Semantic Kernel、Agno 等通用框架……
   → 每家都说自己能干所有事
 
 2024：分化期

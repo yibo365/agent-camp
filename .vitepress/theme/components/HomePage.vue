@@ -7,7 +7,7 @@ const pillars = [
       { text: '大模型基础', href: '/llm/', note: 'Transformer、Token、Embedding、模型选型' },
       { text: '提示词工程', href: '/prompt/', note: 'CoT、ReAct、系统提示词、注入攻防' },
       { text: '上下文工程', href: '/context/', note: '长上下文、记忆、缓存、上下文污染' },
-      { text: '工具调用', href: '/tools/', note: 'Function Calling、Schema、MCP、沙箱' },
+      { text: '工具调用', href: '/tools/', note: 'Function Calling、Schema、MCP、生产化' },
     ],
   },
   {
@@ -15,7 +15,7 @@ const pillars = [
     desc: '理解 Agent 如何检索、规划、执行和协作。',
     links: [
       { text: 'RAG 检索增强', href: '/rag/', note: '切分、检索、重排、GraphRAG、评估' },
-      { text: 'Agent 核心理论', href: '/agent/', note: '定义、循环、规划、反思、自我纠错' },
+      { text: 'Agent 核心理论', href: '/agent/', note: '定义、循环、规划、Skills、自我纠错' },
       { text: '流程编排', href: '/workflow/', note: 'LangGraph、Dify、条件流、循环流' },
       { text: '多 Agent 协作', href: '/multi-agent/', note: '通信协议、调度者、协作策略' },
     ],
@@ -24,8 +24,8 @@ const pillars = [
     title: '实现层',
     desc: '把理论落到框架、源码和垂直场景里。',
     links: [
-      { text: '主流 Agent 框架', href: '/frameworks/', note: 'LangChain、AutoGen、CrewAI、Pydantic AI' },
-      { text: 'Agent 源码解析', href: '/source/', note: 'Claude Code、Codex CLI、Cursor、Cline' },
+      { text: '主流 Agent 框架', href: '/frameworks/', note: 'LangChain、LlamaIndex、OpenAI/Claude SDK' },
+      { text: 'Agent 源码解析', href: '/source/', note: 'Claude Code、Codex CLI、Cline、OpenHands' },
       { text: '垂直领域 Agent', href: '/vertical/', note: 'Coding、Deep Research、Browser、Voice' },
     ],
   },
@@ -33,7 +33,7 @@ const pillars = [
     title: '生产层',
     desc: '面试高频的评估、监控、成本和安全问题。',
     links: [
-      { text: 'Agent 工程化', href: '/engineering/', note: 'Benchmark、Observability、成本、安全、限流' },
+      { text: 'Agent 工程化', href: '/engineering/', note: 'Benchmark、Harness、Observability、成本、安全' },
       { text: '一线工程分享', href: '/industry/', note: 'OpenAI、Anthropic 工程博客中文导读' },
       { text: '评估体系', href: '/engineering/evaluation', note: 'SWE-bench、GAIA、AgentBench、MMAU' },
       { text: '安全与防护', href: '/engineering/security', note: 'Prompt Injection、Jailbreak、Guardrails' },

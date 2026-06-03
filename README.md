@@ -11,20 +11,20 @@
 - **大模型基础 LLM**：Transformer、Tokenization、Embedding、预训练 / SFT / RLHF / DPO、推理参数、推理优化、模型选型、开源与闭源模型取舍。
 - **提示词工程 Prompt Engineering**：Few-shot、CoT / ToT / GoT、Self-Consistency、ReAct、系统提示词、模板工程、Prompt Injection 与压缩。
 - **上下文工程 Context Engineering**：上下文窗口、Lost in the Middle、长上下文模型、上下文压缩、会话历史、记忆系统、Context Caching、上下文污染。
-- **工具调用 Tool Use**：Function Calling、Schema 设计、并行工具调用、错误处理、MCP、权限与沙箱、自定义工具开发。
+- **工具调用 Tool Use**：Function Calling、Schema 设计、并行工具调用、错误处理、MCP、MCP Server 生产化、权限与沙箱、自定义工具开发。
 
 ### 2. RAG 与 Agent 架构
 
 - **RAG 检索增强**：Naive RAG、Chunking、Embedding 模型、向量数据库、Hybrid Search、Reranking、HyDE / Step-back / Self-RAG、GraphRAG、Agentic RAG、RAG 评估。
-- **Agent 核心理论**：Agent 定义、ReAct、Plan-and-Execute、Reflexion、Agent Loop、规划算法、记忆架构、自我纠错。
+- **Agent 核心理论**：Agent 定义、ReAct、Plan-and-Execute、Reflexion、Agent Loop、规划算法、记忆架构、Agent Skills、自我纠错。
 - **Workflow 编排**：LangGraph、LlamaIndex Workflows、Dify / Coze / FastGPT、顺序 / 并行 / 条件 / 循环编排、Workflow 与 Agent 的边界。
 - **多 Agent 协作**：Supervisor、Swarm、Hierarchical、Network、A2A / ACP / AGNTCY 通信协议、Orchestrator-Worker、协作 / 辩论 / 投票、MetaGPT / ChatDev 案例。
 
 ### 3. 框架、源码与真实工程
 
 - **主流 Agent 框架**：LangChain / LangGraph、LlamaIndex、Claude Agent SDK、OpenAI Agents SDK / Swarm、OpenClaw、Hermes Agent、Pi，以及框架选型决策树。
-- **Agent 源码解析**：Claude Code、Codex CLI、Cursor、Cline / Roo Code、OpenHands、Aider、SWE-agent、GPT Engineer、pi-mono、Browser Use。
-- **Agent 工程化**：Benchmark、SWE-bench、GAIA、tau-bench、LLM-as-Judge、Observability、成本优化、安全防护、限流与降级。
+- **Agent 源码解析**：Claude Code、Codex CLI、Cline / Roo Code、OpenHands、Aider、SWE-agent、GPT Engineer、pi-mono、Browser Use。
+- **Agent 工程化**：Benchmark、SWE-bench、GAIA、tau-bench、LLM-as-Judge、Observability、Harness 设计、成本优化、安全防护、限流与降级。
 - **垂直领域 Agent**：Coding Agent、Deep Research、Browser / Computer Use、Voice Agent、Data Analysis Agent、Customer Service Agent。
 - **一线工程分享**：OpenAI 与 Anthropic 工程博客导读，聚焦真实 Agent 系统的架构、评估、沙箱、上下文工程和长期任务实践。
 
@@ -40,9 +40,9 @@
 - **Agent 架构**：ReAct 和 Plan-and-Execute 怎么选？Agent Loop 里什么时候停止？反思、自我纠错、记忆分别应该放在哪一层？
 - **Workflow vs Agent**：什么需求适合确定性 Workflow？什么时候必须引入 Agent？LangGraph 的 State / Reducer / Checkpointer 为什么重要？
 - **多 Agent**：Supervisor、Swarm、Orchestrator-Worker、Network 有什么差异？多 Agent 一定比单 Agent 强吗？如何避免协作成本超过收益？
-- **框架选型**：LangGraph、OpenAI Agents SDK、Claude Agent SDK、LlamaIndex、CrewAI / AutoGen 类框架分别适合什么场景？
+- **框架选型**：LangGraph、OpenAI Agents SDK、Claude Agent SDK、LlamaIndex、OpenClaw、Hermes、Pi 分别适合什么场景？
 - **生产落地**：怎样做 Agent 评估？如何追踪一次失败的 tool call？如何控制 token 成本？Prompt Injection、越权工具调用、沙箱逃逸怎么防？
-- **Coding Agent**：Claude Code、Codex CLI、Cursor、Cline、Aider 的设计差异是什么？为什么代码编辑工具通常要做 diff、permission、sandbox、checkpoint？
+- **Coding Agent**：Claude Code、Codex CLI、Cline、Aider 的设计差异是什么？为什么代码编辑工具通常要做 diff、permission、sandbox、checkpoint？
 
 ## 推荐学习路径
 
