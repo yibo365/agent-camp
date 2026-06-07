@@ -32,7 +32,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    siteTitle: 'AIGC Camp',
+    siteTitle: 'Agent Camp',
     logo: { src: '/logo.svg', alt: 'AIGC Camp' },
     outline: { level: [2, 3], label: '本页大纲' },
     docFooter: { prev: '上一篇', next: '下一篇' },
