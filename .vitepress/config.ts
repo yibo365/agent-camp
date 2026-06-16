@@ -274,6 +274,7 @@ export default defineConfig({
             { text: '用模型评估模型 LLM-as-Judge', link: '/engineering/llm-judge' },
             { text: '可观测性 Observability（LangSmith / Langfuse）', link: '/engineering/observability' },
             { text: 'Agent Harness 设计', link: '/engineering/harness' },
+            { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },
