@@ -287,6 +287,7 @@ export default defineConfig({
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },
+            { text: 'Agent 高可用与容灾面试深挖', link: '/engineering/reliability-interview' },
           ],
         },
       ],
