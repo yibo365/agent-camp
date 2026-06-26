@@ -7,6 +7,7 @@
 - [评估体系](./evaluation) — SWE-bench、GAIA、AgentBench、τ-bench、MMAU
 - [用模型评估模型](./llm-judge) — 用大模型作为评审的最佳实践与陷阱
 - [可观测性](./observability) — LangSmith、Langfuse、Arize Phoenix、Helicone
+- [Agent 线上质量治理面试深挖](./agent-quality-interview) — trace、自动裁判、badcase 归因与回归集
 - [Agent Harness 设计](./harness) — 状态、工具、权限、验证和恢复
 - [从业务 Agent 到 Agent Runtime](./agent-runtime) — 生产级业务 Agent 的六个运行时平面
 - [Agent Runtime 面试深挖](./agent-runtime-interview) — 匿名真实面经里的平台/引擎追问链
@@ -19,6 +20,7 @@
 
 1. **评估体系** 是工程化第一步：没有评估就没有迭代
 2. **可观测性** 紧随其后，没有调用链等于在黑盒里抓瞎
-3. 做长周期任务前补 **Harness 设计**，否则 Agent 很容易丢状态、漂移或不可恢复；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；准备平台/引擎岗位时接着看 **Agent Runtime 面试深挖**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
-4. 上线后两条主线并行优化：**成本** 与 **安全**
-5. 高并发场景必读 **限流降级**
+3. 准备线上质量追问时看 **Agent 线上质量治理面试深挖**，把 trace、eval、badcase 和回归集串起来
+4. 做长周期任务前补 **Harness 设计**，否则 Agent 很容易丢状态、漂移或不可恢复；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；准备平台/引擎岗位时接着看 **Agent Runtime 面试深挖**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
+5. 上线后两条主线并行优化：**成本** 与 **安全**
+6. 高并发场景必读 **限流降级**

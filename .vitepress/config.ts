@@ -274,6 +274,7 @@ export default defineConfig({
             { text: '评估体系 Benchmark（SWE-bench / GAIA / τ-bench）', link: '/engineering/evaluation' },
             { text: '用模型评估模型 LLM-as-Judge', link: '/engineering/llm-judge' },
             { text: '可观测性 Observability（LangSmith / Langfuse）', link: '/engineering/observability' },
+            { text: 'Agent 线上质量治理面试深挖', link: '/engineering/agent-quality-interview' },
             { text: 'Agent Harness 设计', link: '/engineering/harness' },
             { text: '从业务 Agent 到 Agent Runtime', link: '/engineering/agent-runtime' },
             { text: 'Agent Runtime 面试深挖', link: '/engineering/agent-runtime-interview' },
