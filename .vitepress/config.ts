@@ -295,6 +295,9 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'OpenAI Engineering 概览', link: '/industry/openai/' },
+            { text: 'Agent 如何改变工作', link: '/industry/openai/how-agents-are-transforming-work' },
+            { text: 'Codex-Maxxing 长周期工作', link: '/industry/openai/codex-maxxing-long-running-work' },
+            { text: 'Codex 跨岗位工作流', link: '/industry/openai/codex-for-every-role-tool-workflow' },
             { text: '自我改进的税务 Agent', link: '/industry/openai/building-self-improving-tax-agents-with-codex' },
             { text: 'Codex Windows 沙箱', link: '/industry/openai/building-codex-windows-sandbox' },
             { text: '超算网络与大规模训练', link: '/industry/openai/mrc-supercomputer-networking' },
@@ -312,6 +315,8 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Anthropic Engineering 概览', link: '/industry/anthropic/' },
+            { text: 'Claude Tag', link: '/industry/anthropic/claude-tag' },
+            { text: 'Opus 4.8 Dynamic Workflows', link: '/industry/anthropic/claude-opus-4-8-dynamic-workflows' },
             { text: 'Claude 产品隔离', link: '/industry/anthropic/how-we-contain-claude' },
             { text: 'Claude Code 质量复盘', link: '/industry/anthropic/april-23-postmortem' },
             { text: 'Managed Agents', link: '/industry/anthropic/managed-agents' },

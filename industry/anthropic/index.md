@@ -1,13 +1,15 @@
 # Anthropic Engineering
 
-来源：[Engineering at Anthropic](https://www.anthropic.com/engineering)。整理日期：2026-06-01。
+来源：[Engineering at Anthropic](https://www.anthropic.com/engineering) / [Anthropic News](https://www.anthropic.com/news)。整理日期：2026-06-26。
 
-这一组收录 Anthropic Engineering 入口当前可见的工程文章。每篇都整理成站内中文深度精读页，保留原文链接、发布时间和主题脉络，重点提炼 Claude Code、Agent harness、上下文工程、工具使用、评测、安全和 MCP 的工程取舍。
+这一组收录 Anthropic Engineering 入口当前可见的工程文章，并补充与 Agent 工程强相关的最新产品文章。每篇都整理成站内中文深度精读页，保留原文链接、发布时间和主题脉络，重点提炼 Claude Code、Agent harness、上下文工程、工具使用、评测、安全和 MCP 的工程取舍。
 
 > 说明：本站页面面向国内学习者做了较完整的中文讲解和结构化重述，但不是逐字全文翻译。需要核对原始表述、图片和代码时，请回到原文阅读。
 
 ## 文章列表
 
+- [Claude Tag：团队协作型 Agent 的新形态](./claude-tag)
+- [Claude Opus 4.8 与 Dynamic Workflows](./claude-opus-4-8-dynamic-workflows)
 - [Claude 跨产品隔离与约束](./how-we-contain-claude)
 - [Claude Code 质量报告更新](./april-23-postmortem)
 - [扩展托管 Agent：把“大脑”和“手”解耦](./managed-agents)
@@ -37,6 +39,7 @@
 ## 阅读顺序
 
 1. 入门 Agent 设计：先读 [构建高效 Agent](./building-effective-agents)、[有效上下文工程](./effective-context-engineering-for-ai-agents)。
-2. 做 Coding Agent：读 [Claude Code 最佳实践](./claude-code-best-practices)、[长周期 Harness](./effective-harnesses-for-long-running-agents)、[Managed Agents](./managed-agents)。
-3. 做安全与权限：读 [沙箱](./claude-code-sandboxing)、[auto mode](./claude-code-auto-mode)、[containment](./how-we-contain-claude)。
-4. 做评测与可靠性：读 [Agent evals](./demystifying-evals-for-ai-agents)、[基础设施噪声](./infrastructure-noise)、[AI-resistant evaluations](./ai-resistant-technical-evaluations)、[事故复盘](./a-postmortem-of-three-recent-issues)。
+2. 做 Coding Agent：读 [Claude Code 最佳实践](./claude-code-best-practices)、[长周期 Harness](./effective-harnesses-for-long-running-agents)、[Managed Agents](./managed-agents)、[Dynamic Workflows](./claude-opus-4-8-dynamic-workflows)。
+3. 做团队协作 Agent：读 [Claude Tag](./claude-tag)、[Managed Agents](./managed-agents)、[多 Agent 研究系统](./multi-agent-research-system)。
+4. 做安全与权限：读 [沙箱](./claude-code-sandboxing)、[auto mode](./claude-code-auto-mode)、[containment](./how-we-contain-claude)。
+5. 做评测与可靠性：读 [Agent evals](./demystifying-evals-for-ai-agents)、[基础设施噪声](./infrastructure-noise)、[AI-resistant evaluations](./ai-resistant-technical-evaluations)、[事故复盘](./a-postmortem-of-three-recent-issues)。

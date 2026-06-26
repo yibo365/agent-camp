@@ -6,6 +6,9 @@ OpenAI 和 Anthropic 的工程博客，是观察 Agent 产品如何真实落地�
 
 ## OpenAI Engineering
 
+- [OpenAI：Agent 如何改变工作](./openai/how-agents-are-transforming-work)
+- [Codex-Maxxing：长周期工作的 Agent 使用法](./openai/codex-maxxing-long-running-work)
+- [Codex for every role, tool, and workflow](./openai/codex-for-every-role-tool-workflow)
 - [用 Codex 构建可自我改进的税务 Agent](./openai/building-self-improving-tax-agents-with-codex)
 - [为 Windows 版 Codex 构建安全有效的沙箱](./openai/building-codex-windows-sandbox)
 - [加速大规模 AI 训练的超算网络](./openai/mrc-supercomputer-networking)
@@ -19,6 +22,8 @@ OpenAI 和 Anthropic 的工程博客，是观察 Agent 产品如何真实落地�
 
 ## Anthropic Engineering
 
+- [Claude Tag：团队协作型 Agent 的新形态](./anthropic/claude-tag)
+- [Claude Opus 4.8 与 Dynamic Workflows](./anthropic/claude-opus-4-8-dynamic-workflows)
 - [Claude 跨产品隔离与约束](./anthropic/how-we-contain-claude)
 - [Claude Code 质量报告更新](./anthropic/april-23-postmortem)
 - [扩展托管 Agent：把“大脑”和“手”解耦](./anthropic/managed-agents)
