@@ -280,6 +280,7 @@ export default defineConfig({
             { text: '可观测性 Observability（LangSmith / Langfuse）', link: '/engineering/observability' },
             { text: 'Agent 线上质量治理面试深挖', link: '/engineering/agent-quality-interview' },
             { text: 'Agent Harness 设计', link: '/engineering/harness' },
+            { text: 'Agent 确定性控制面试深挖', link: '/engineering/deterministic-control-interview' },
             { text: '从业务 Agent 到 Agent Runtime', link: '/engineering/agent-runtime' },
             { text: 'Agent Runtime 面试深挖', link: '/engineering/agent-runtime-interview' },
             { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
