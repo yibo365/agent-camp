@@ -234,6 +234,7 @@ export default defineConfig({
             { text: 'Hermes Agent', link: '/frameworks/hermes-agent' },
             { text: 'Pi', link: '/frameworks/pi' },
             { text: '框架选型决策树', link: '/frameworks/comparison' },
+            { text: 'Agent 框架选型面试深挖', link: '/frameworks/framework-selection-interview' },
           ],
         },
       ],
