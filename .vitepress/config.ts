@@ -282,6 +282,7 @@ export default defineConfig({
             { text: '从业务 Agent 到 Agent Runtime', link: '/engineering/agent-runtime' },
             { text: 'Agent Runtime 面试深挖', link: '/engineering/agent-runtime-interview' },
             { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
+            { text: 'AI Coding SDLC 面试深挖', link: '/engineering/ai-coding-sdlc-interview' },
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },

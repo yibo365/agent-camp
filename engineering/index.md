@@ -12,6 +12,7 @@
 - [从业务 Agent 到 Agent Runtime](./agent-runtime) — 生产级业务 Agent 的六个运行时平面
 - [Agent Runtime 面试深挖](./agent-runtime-interview) — 匿名真实面经里的平台/引擎追问链
 - [Loop Engineering 循环工程](./loop-engineering) — 调度、并行 worktree、持久状态、maker/checker
+- [AI Coding SDLC 面试深挖](./ai-coding-sdlc-interview) — PRD、技术方案、任务拆解、TDD、review gate 与研发指标
 - [成本优化](./cost-optimization) — 提示词缓存、模型路由、蒸馏、批处理
 - [安全](./security) — 提示词注入、越狱、护栏、敏感信息脱敏
 - [限流与降级](./rate-limiting) — 速率限制、降级、熔断、退避重试
@@ -22,5 +23,6 @@
 2. **可观测性** 紧随其后，没有调用链等于在黑盒里抓瞎
 3. 准备线上质量追问时看 **Agent 线上质量治理面试深挖**，把 trace、eval、badcase 和回归集串起来
 4. 做长周期任务前补 **Harness 设计**，否则 Agent 很容易丢状态、漂移或不可恢复；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；准备平台/引擎岗位时接着看 **Agent Runtime 面试深挖**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
-5. 上线后两条主线并行优化：**成本** 与 **安全**
-6. 高并发场景必读 **限流降级**
+5. 准备 AI Coding / 研发效能方向时看 **AI Coding SDLC 面试深挖**，把个人工具使用升级成团队流程和质量门禁
+6. 上线后两条主线并行优化：**成本** 与 **安全**
+7. 高并发场景必读 **限流降级**
