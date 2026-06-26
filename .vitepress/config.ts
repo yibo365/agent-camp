@@ -289,6 +289,7 @@ export default defineConfig({
             { text: 'AI Coding SDLC 面试深挖', link: '/engineering/ai-coding-sdlc-interview' },
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
+            { text: 'Agent 流式输出安全面试深挖', link: '/engineering/streaming-guardrail-interview' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },
             { text: 'Agent 高可用与容灾面试深挖', link: '/engineering/reliability-interview' },
           ],
