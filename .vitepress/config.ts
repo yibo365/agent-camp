@@ -109,6 +109,7 @@ export default defineConfig({
             { text: '推理参数详解', link: '/llm/inference-params' },
             { text: '推理优化（KV Cache / 量化 / FlashAttention）', link: '/llm/inference-optimization' },
             { text: '主流模型对比', link: '/llm/models' },
+            { text: '模型选型与持续重评面试深挖', link: '/llm/model-selection-interview' },
             { text: '开源 vs 闭源选型', link: '/llm/open-vs-closed' },
           ],
         },

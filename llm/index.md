@@ -11,6 +11,7 @@
 - [推理参数详解](./inference-params) — temperature、top_p、top_k、penalty 调优
 - [推理优化](./inference-optimization) — KV Cache、量化、FlashAttention、Speculative Decoding
 - [主流模型对比](./models) — GPT、Claude、Gemini、Llama、Qwen、DeepSeek 横向评测
+- [模型选型与持续重评面试深挖](./model-selection-interview) — 业务 eval、分阶段指标、成本延迟、合规边界和退出条件
 - [开源 vs 闭源选型](./open-vs-closed) — 业务场景下的选型矩阵
 
 ## 学习路径
@@ -18,4 +19,4 @@
 1. 先掌握 **Transformer + Tokenization + Embedding** 这三个基石概念
 2. 理解 **训练范式**，知道 Base Model / Instruct Model / Reasoning Model 的差别
 3. 实战时重点掌握 **推理参数** 与 **推理优化**
-4. 选型阶段对照 **主流模型对比** 与 **开源 vs 闭源** 决策
+4. 选型阶段先看 **主流模型对比** 与 **开源 vs 闭源**，准备面试追问时再看 **模型选型与持续重评面试深挖**
