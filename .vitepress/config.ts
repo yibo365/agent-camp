@@ -173,6 +173,7 @@ export default defineConfig({
           items: [
             { text: '概览', link: '/rag/' },
             { text: '朴素 RAG 与瓶颈 Naive RAG', link: '/rag/basics' },
+            { text: 'RAG 选型面试深挖', link: '/rag/rag-selection-interview' },
             { text: '文档切分策略 Chunking', link: '/rag/chunking' },
             { text: '嵌入模型选型 Embedding Models', link: '/rag/embedding-models' },
             { text: '向量数据库对比 Vector DB', link: '/rag/vector-db' },
