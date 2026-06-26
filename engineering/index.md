@@ -16,6 +16,7 @@
 - [Loop Engineering 循环工程](./loop-engineering) — 调度、并行 worktree、持久状态、maker/checker
 - [AI Coding SDLC 面试深挖](./ai-coding-sdlc-interview) — PRD、技术方案、任务拆解、TDD、review gate 与研发指标
 - [成本优化](./cost-optimization) — 提示词缓存、模型路由、蒸馏、批处理
+- [Agent 首 Token 与 P95 延迟面试深挖](./latency-interview) — TTFT、critical path、P95 长尾、prompt cache 与预取
 - [安全](./security) — 提示词注入、越狱、护栏、敏感信息脱敏
 - [Agent 流式输出安全面试深挖](./streaming-guardrail-interview) — buffer 审查、同步/异步 guardrail、撤回语义与审计
 - [限流与降级](./rate-limiting) — 速率限制、降级、熔断、退避重试
@@ -28,5 +29,5 @@
 3. 准备上线效果追问时先看 **Agent 业务效果与 ROI 面试深挖**，再看 **Agent 线上质量治理面试深挖**，把业务 outcome、trace、eval、badcase 和回归集串起来
 4. 做长周期任务前补 **Harness 设计**，遇到“模型漏段、算错、JSON 不稳”这类追问时补 **Agent 确定性控制面试深挖**；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；准备平台/引擎岗位时接着看 **Agent Runtime 面试深挖**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
 5. 准备 AI Coding / 研发效能方向时看 **AI Coding SDLC 面试深挖**，把个人工具使用升级成团队流程和质量门禁
-6. 上线后两条主线并行优化：**成本** 与 **安全**；准备高风险输出追问时补 **Agent 流式输出安全面试深挖**
+6. 上线后两条主线并行优化：**成本** 与 **安全**；准备性能追问时补 **Agent 首 Token 与 P95 延迟面试深挖**，准备高风险输出追问时补 **Agent 流式输出安全面试深挖**
 7. 高并发场景必读 **限流降级**；准备负责人/架构面时补 **Agent 高可用与容灾面试深挖**

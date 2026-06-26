@@ -288,6 +288,7 @@ export default defineConfig({
             { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
             { text: 'AI Coding SDLC 面试深挖', link: '/engineering/ai-coding-sdlc-interview' },
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
+            { text: 'Agent 首 Token 与 P95 延迟面试深挖', link: '/engineering/latency-interview' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },
             { text: 'Agent 流式输出安全面试深挖', link: '/engineering/streaming-guardrail-interview' },
             { text: '限流与降级 Rate Limiting', link: '/engineering/rate-limiting' },
