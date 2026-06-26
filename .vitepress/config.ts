@@ -158,6 +158,7 @@ export default defineConfig({
             { text: '工具 Schema 设计', link: '/tools/schema-design' },
             { text: '并行工具调用 Parallel Tool Use', link: '/tools/parallel' },
             { text: '错误处理与重试', link: '/tools/error-handling' },
+            { text: '工具调用死循环面试深挖', link: '/tools/tool-loop-interview' },
             { text: 'MCP 协议详解 Model Context Protocol', link: '/tools/mcp' },
             { text: 'MCP Server 生产化', link: '/tools/mcp-production' },
             { text: '工具沙箱与权限 Sandbox', link: '/tools/sandbox' },
