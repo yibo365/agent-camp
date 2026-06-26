@@ -139,6 +139,7 @@ export default defineConfig({
             { text: '概览', link: '/context/' },
             { text: '上下文窗口与位置偏置 Lost in the Middle', link: '/context/window-bias' },
             { text: '长上下文模型对比', link: '/context/long-context' },
+            { text: 'Context Engineering 面试深挖', link: '/context/context-engineering-interview' },
             { text: '上下文压缩与摘要', link: '/context/compression' },
             { text: '记忆系统 Memory', link: '/context/memory' },
             { text: '会话历史管理', link: '/context/history' },
