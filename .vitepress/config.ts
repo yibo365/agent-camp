@@ -142,6 +142,7 @@ export default defineConfig({
             { text: 'Context Engineering 面试深挖', link: '/context/context-engineering-interview' },
             { text: '上下文压缩与摘要', link: '/context/compression' },
             { text: '记忆系统 Memory', link: '/context/memory' },
+            { text: 'Memory Governance 面试深挖', link: '/context/memory-governance-interview' },
             { text: '会话历史管理', link: '/context/history' },
             { text: '上下文缓存 Context Caching', link: '/context/caching' },
             { text: '上下文污染与清理', link: '/context/pollution' },
