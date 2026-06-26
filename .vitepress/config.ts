@@ -275,6 +275,7 @@ export default defineConfig({
             { text: '可观测性 Observability（LangSmith / Langfuse）', link: '/engineering/observability' },
             { text: 'Agent Harness 设计', link: '/engineering/harness' },
             { text: '从业务 Agent 到 Agent Runtime', link: '/engineering/agent-runtime' },
+            { text: 'Agent Runtime 面试深挖', link: '/engineering/agent-runtime-interview' },
             { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
             { text: '成本优化 Cost Optimization', link: '/engineering/cost-optimization' },
             { text: '安全（Injection / Jailbreak / Guardrails）', link: '/engineering/security' },

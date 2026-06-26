@@ -9,6 +9,7 @@
 - [可观测性](./observability) — LangSmith、Langfuse、Arize Phoenix、Helicone
 - [Agent Harness 设计](./harness) — 状态、工具、权限、验证和恢复
 - [从业务 Agent 到 Agent Runtime](./agent-runtime) — 生产级业务 Agent 的六个运行时平面
+- [Agent Runtime 面试深挖](./agent-runtime-interview) — 匿名真实面经里的平台/引擎追问链
 - [Loop Engineering 循环工程](./loop-engineering) — 调度、并行 worktree、持久状态、maker/checker
 - [成本优化](./cost-optimization) — 提示词缓存、模型路由、蒸馏、批处理
 - [安全](./security) — 提示词注入、越狱、护栏、敏感信息脱敏
@@ -18,6 +19,6 @@
 
 1. **评估体系** 是工程化第一步：没有评估就没有迭代
 2. **可观测性** 紧随其后，没有调用链等于在黑盒里抓瞎
-3. 做长周期任务前补 **Harness 设计**，否则 Agent 很容易丢状态、漂移或不可恢复；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
+3. 做长周期任务前补 **Harness 设计**，否则 Agent 很容易丢状态、漂移或不可恢复；如果要把单个业务 Agent 抽成可复用平台，再看 **Agent Runtime**；准备平台/引擎岗位时接着看 **Agent Runtime 面试深挖**；想让 Agent 无人值守地自己跑，再上 **Loop Engineering**（harness 的上一层）
 4. 上线后两条主线并行优化：**成本** 与 **安全**
 5. 高并发场景必读 **限流降级**
