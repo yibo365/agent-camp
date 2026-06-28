@@ -283,6 +283,7 @@ export default defineConfig({
             { text: 'Agent 业务效果与 ROI 面试深挖', link: '/engineering/business-roi-interview' },
             { text: 'Agent Harness 设计', link: '/engineering/harness' },
             { text: 'Agent 确定性控制面试深挖', link: '/engineering/deterministic-control-interview' },
+            { text: 'Agent 工程异常处理面试深挖', link: '/engineering/agent-failure-modes-interview' },
             { text: '从业务 Agent 到 Agent Runtime', link: '/engineering/agent-runtime' },
             { text: 'Agent Runtime 面试深挖', link: '/engineering/agent-runtime-interview' },
             { text: 'Loop Engineering 循环工程', link: '/engineering/loop-engineering' },
