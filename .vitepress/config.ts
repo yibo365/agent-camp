@@ -277,6 +277,7 @@ export default defineConfig({
           items: [
             { text: '概览', link: '/engineering/' },
             { text: '评估体系 Benchmark（SWE-bench / GAIA / τ-bench）', link: '/engineering/evaluation' },
+            { text: 'Agent 离线评测数据集', link: '/engineering/offline-eval-datasets' },
             { text: '用模型评估模型 LLM-as-Judge', link: '/engineering/llm-judge' },
             { text: '可观测性 Observability（LangSmith / Langfuse）', link: '/engineering/observability' },
             { text: 'Agent 线上回复监测面试深挖', link: '/engineering/online-response-monitoring-interview' },
