@@ -1213,3 +1213,560 @@
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Reading modes ----------------------------------------------------------- */
+
+.VPNavBarAppearance,
+.VPNavScreenAppearance,
+.VPNavBarSocialLinks,
+.VPNavScreenSocialLinks,
+.VPNavBarExtra .group:has(.item.appearance),
+.VPNavBarExtra .group:has(.item.social-links) {
+  display: none !important;
+}
+
+.RepositoryLink {
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  color: var(--agent-muted);
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.VPNavBarTitle:has(> .RepositoryLink) {
+  display: flex;
+  align-items: center;
+}
+
+.VPNavBarTitle:has(> .RepositoryLink) > .title {
+  width: auto;
+}
+
+.RepositoryLink--placeholder {
+  pointer-events: none;
+}
+
+.RepositoryLink:hover {
+  background: var(--agent-surface-2);
+  color: var(--agent-ink);
+}
+
+.RepositoryLink:focus-visible {
+  outline: 2px solid var(--agent-accent);
+  outline-offset: 2px;
+}
+
+.RepositoryLink svg {
+  width: 18px;
+  height: 18px;
+}
+
+.DisplayControls {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  margin-left: 12px;
+  border: 1px solid var(--agent-line);
+  border-radius: 999px;
+  padding: 3px;
+  background: var(--agent-surface);
+}
+
+.DisplayControl {
+  display: inline-flex;
+  gap: 7px;
+  align-items: center;
+  border: 0;
+  border-radius: 999px;
+  padding: 4px 7px 4px 5px;
+  background: transparent;
+  color: var(--agent-muted);
+  font-size: 11.5px;
+  font-weight: 720;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.DisplayControl:hover {
+  background: var(--agent-surface-2);
+  color: var(--agent-ink);
+}
+
+.DisplayControl:focus-visible {
+  outline: 2px solid var(--agent-accent);
+  outline-offset: 2px;
+}
+
+.DisplayControl.is-active {
+  background: color-mix(in srgb, var(--agent-accent) 10%, var(--agent-surface));
+  color: var(--agent-accent);
+}
+
+.DisplayControl__track {
+  position: relative;
+  display: inline-flex;
+  width: 28px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--agent-line);
+  transition: background-color 160ms ease;
+}
+
+.DisplayControl__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--agent-surface);
+  box-shadow: 0 1px 4px rgba(24, 34, 30, 0.25);
+  transition: transform 160ms ease;
+}
+
+.DisplayControl.is-active .DisplayControl__track {
+  background: var(--agent-accent);
+}
+
+.DisplayControl.is-active .DisplayControl__thumb {
+  transform: translateX(12px);
+}
+
+.DisplayControls__divider {
+  width: 1px;
+  height: 16px;
+  background: var(--agent-line);
+}
+
+.BookSidebar,
+.BookPagination {
+  display: none;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) {
+  --vp-sidebar-width: 336px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .VPNavBarMenu,
+.book-mode-enabled .Layout:not(.agent-home-page) .VPNavScreenMenu,
+.book-mode-enabled .Layout:not(.agent-home-page) .VPSidebar > .nav > .group,
+.book-mode-enabled .Layout:not(.agent-home-page) .VPDocFooter .prev-next {
+  display: none;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .BookSidebar {
+  display: block;
+}
+
+.BookSidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--agent-line);
+  padding: 0 2px 14px;
+}
+
+.BookSidebar__header span {
+  color: var(--agent-ink);
+  font-size: 18px;
+  font-weight: 820;
+}
+
+.BookSidebar__header strong {
+  color: var(--agent-muted);
+  font-size: 11px;
+  font-weight: 720;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.BookSidebar__chapter {
+  border-radius: 9px;
+}
+
+.BookSidebar__chapter + .BookSidebar__chapter {
+  margin-top: 5px;
+}
+
+.BookSidebar__chapterButton {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 16px;
+  gap: 7px;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px;
+  background: transparent;
+  color: var(--agent-ink);
+  text-align: left;
+  cursor: pointer;
+}
+
+.BookSidebar__chapterButton:hover {
+  background: var(--agent-surface-2);
+}
+
+.BookSidebar__chapterButton:focus-visible {
+  outline: 2px solid var(--agent-accent);
+  outline-offset: -2px;
+}
+
+.BookSidebar__chapterNumber {
+  color: var(--agent-accent);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.BookSidebar__chapterTitle {
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.BookSidebar__chevron {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid var(--agent-muted);
+  border-bottom: 1.5px solid var(--agent-muted);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 160ms ease;
+}
+
+.BookSidebar__chapterButton[aria-expanded="false"] .BookSidebar__chevron {
+  transform: rotate(-45deg) translate(-1px, -1px);
+}
+
+.BookSidebar__chapterBody {
+  margin: 0 10px 10px 21px;
+  border-left: 1px solid var(--agent-line);
+  padding: 1px 0 3px 12px;
+}
+
+.BookSidebar__articleList,
+.BookSidebarItem__children {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.BookSidebarItem__link,
+.BookSidebarItem__label {
+  border-radius: 7px;
+  padding: 6px 8px;
+  color: var(--agent-muted);
+  font-size: 12.5px;
+  font-weight: 580;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.BookSidebarItem__link {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 5px;
+  align-items: baseline;
+}
+
+.BookSidebarItem__label {
+  display: block;
+}
+
+.BookSidebarItem__number {
+  color: color-mix(in srgb, var(--agent-muted) 74%, transparent);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 760;
+  line-height: 1.45;
+}
+
+.BookSidebarItem__text {
+  min-width: 0;
+}
+
+.BookSidebarItem__link:hover {
+  background: var(--agent-surface-2);
+  color: var(--agent-ink);
+}
+
+.BookSidebarItem__link.is-active {
+  background: color-mix(in srgb, var(--agent-accent) 12%, var(--agent-surface));
+  color: var(--agent-accent);
+  font-weight: 800;
+}
+
+.BookSidebarItem__link.is-active .BookSidebarItem__number {
+  color: var(--agent-accent);
+}
+
+.BookSidebarItem__label {
+  margin-top: 4px;
+  color: var(--agent-ink);
+  font-weight: 720;
+}
+
+.BookSidebarItem__children {
+  margin-left: 8px;
+  border-left: 1px solid var(--agent-line);
+  padding-left: 6px;
+}
+
+.BookSidebar__subgroup {
+  margin-top: 14px;
+}
+
+.BookSidebar__subgroup > h3,
+.BookSidebar__subgroup > a {
+  display: block;
+  margin: 0 0 5px;
+  padding: 0 8px;
+  color: var(--agent-ink);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+/* Book mode uses a denser, more continuous reading rhythm. These overrides
+ * deliberately stay out of feature mode and the home page. */
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc {
+  font-size: 15.5px;
+  line-height: 1.72;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero {
+  margin-bottom: 24px;
+  padding: clamp(20px, 2.4vw, 28px);
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__kicker {
+  margin-bottom: 10px;
+  padding: 3px 8px;
+  font-size: 12px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero h1 {
+  max-width: 920px;
+  font-size: clamp(28px, 2.6vw, 36px);
+  line-height: 1.12;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__lead {
+  max-width: 960px;
+  margin-top: 10px;
+  font-size: clamp(15.5px, 1.5vw, 18px);
+  line-height: 1.58;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__meta {
+  gap: 6px;
+  margin-top: 13px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__meta span {
+  padding: 4px 8px;
+  font-size: 11.5px;
+  line-height: 1.3;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc > h1:first-child,
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc > div > h1:first-child {
+  margin-bottom: 20px;
+  padding: clamp(20px, 2.4vw, 28px);
+  font-size: clamp(28px, 2.6vw, 36px);
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero + blockquote {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  line-height: 1.62;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc h2 {
+  gap: 10px;
+  margin-top: 34px;
+  padding-top: 18px;
+  font-size: clamp(23px, 2.3vw, 28px);
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc h2::before {
+  width: 6px;
+  height: 22px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc h3 {
+  margin-top: 26px;
+  font-size: 19px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .interview-grid {
+  gap: 8px;
+  margin: 12px 0 24px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .interview-grid div {
+  gap: 4px;
+  padding: 11px 12px;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .interview-grid strong {
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .interview-grid span {
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.book-mode-enabled .Layout:not(.agent-home-page) .BookPagination {
+  display: grid;
+}
+
+.BookPagination {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 48px;
+  border-top: 1px solid var(--agent-line);
+  padding-top: 24px;
+}
+
+.BookPagination__link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  border: 1px solid var(--agent-line);
+  border-radius: 9px;
+  padding: 16px 18px;
+  background: var(--agent-surface);
+  text-decoration: none;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.BookPagination__link:hover {
+  border-color: color-mix(in srgb, var(--agent-accent) 50%, var(--agent-line));
+  background: color-mix(in srgb, var(--agent-accent) 5%, var(--agent-surface));
+}
+
+.BookPagination__link--next {
+  text-align: right;
+}
+
+.BookPagination__link span {
+  overflow: hidden;
+  color: var(--agent-muted);
+  font-size: 12px;
+  font-weight: 680;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.BookPagination__link strong {
+  color: var(--agent-ink);
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.45;
+}
+
+@media (max-width: 1100px) {
+  .DisplayControl__label {
+    display: none;
+  }
+
+  .DisplayControls {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 640px) {
+  .RepositoryLink {
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+  }
+
+  .RepositoryLink svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .DisplayControls {
+    margin-left: 0;
+  }
+
+  .DisplayControl {
+    padding: 3px;
+  }
+
+  .DisplayControl__track {
+    width: 24px;
+    height: 14px;
+  }
+
+  .DisplayControl__thumb {
+    width: 10px;
+    height: 10px;
+  }
+
+  .DisplayControl.is-active .DisplayControl__thumb {
+    transform: translateX(10px);
+  }
+
+  .DisplayControls__divider {
+    height: 14px;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc {
+    font-size: 15px;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero {
+    margin-bottom: 22px;
+    padding: 18px 16px 18px 20px;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero h1 {
+    font-size: 28px;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__lead {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc .doc-hero__meta span {
+    width: auto;
+  }
+
+  .book-mode-enabled .Layout:not(.agent-home-page) .vp-doc h2 {
+    margin-top: 30px;
+    padding-top: 16px;
+    font-size: 23px;
+  }
+
+  .BookPagination {
+    grid-template-columns: 1fr;
+  }
+
+  .BookPagination > span {
+    display: none;
+  }
+
+  .BookPagination__link--next {
+    text-align: left;
+  }
+}
